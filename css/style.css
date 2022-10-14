@@ -4,8 +4,8 @@
 }
 
 body{
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 header{
     padding: 24px 0;
@@ -42,7 +42,6 @@ ul li a{
 .infoHero {
     padding:80px 0;
     /* display: flex; */
-    height: 300px;
     font-family: 'Manrope', sans-serif;
 }
 
@@ -53,26 +52,40 @@ ul li a{
 }
 
 .infoHero h1{
-    font-weight: bold;
-    font-size: 48px;
+    font-weight:500;
+    font-size: 64px;
+    width: 65%;
 }
 
 .enlaces div{
-    margin-bottom: 40px;
+    margin-bottom: 24px;
     background-color: #2f2bd8;
-    padding: 16px 16px;
+    padding: 24px 24px;
     color: white;
+    width: 20%;
+    margin-right: 20px;
+}
 
+.enlaces div :nth-child(1){
+    margin-right: 16px;
+}
+
+.enlaces{
+    display: flex;
+    background-color: aqua;
+    justify-content: flex-end;
+    align-items: center;
+    height: 400px;
 }
 
 /* segunda seccion  */
 
 .segundaSeccion{
     display: flex;
-    padding-top: 40px;
+    /* padding-top: 40px; */
     padding-bottom: 40px;
     font-family: 'Manrope', sans-serif;
-    margin-top: 120px;
+    /* margin-top: 120px; */
 
 }
 
@@ -84,6 +97,7 @@ ul li a{
 .seccionItems{
     display: flex;
     flex-direction: column;
+    margin-top: 180px;
 }
 
 .seccionItems div a img{
@@ -105,13 +119,14 @@ ul li a{
 }
 
 .tituloImagen img{
-    margin-top: 24px;
+    margin-top: 50px;
     width: 80%;
 }
 
 .tituloImagen h2{
     font-size: 36px;
-    font-weight: 600;
+    font-weight: bold;
+    width: 43%;
 }
 
 /* TERCERA SECCION */
@@ -299,3 +314,4 @@ footer div h6{
     width: 30%;
     margin-top: 16px;
 }
+
