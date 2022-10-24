@@ -7,9 +7,10 @@
 }
 
 
-body{
-    margin-left: 8%;
-    margin-right: 8%;
+#cuerpo{
+    margin-left: 10%;
+    margin-right: 10%;
+    background-image: url(/images/programacion-fondo.jpg);
 }
 
 /* ESTILOS MENU DE NAVEGACIÓN */
@@ -44,7 +45,7 @@ nav ul{
 .menu-nav li a{
     font-weight:500;
     font-size: 18px;
-    color: black;
+    color: white;
     text-decoration: none;
     /* padding-bottom: 0.3rem; */
     padding: 0 10px;
@@ -54,7 +55,7 @@ nav ul{
 .menu-nav li a:after{
     content: "";
     position: absolute;
-    background-color: black;
+    background-color: white;
     height: 4px;
     width: 0;
     left: 0;
@@ -71,8 +72,8 @@ nav ul{
 
 .infoHero {
     padding:80px 0;
-    /* display: flex; */
     font-family: 'Manrope', sans-serif;
+    height: 550px;
 }
 
 .infoHero div img{
@@ -83,140 +84,63 @@ nav ul{
 
 .infoHero h1{
     font-weight:900;
-    font-size: 64px;
-    width: 80%;
+    font-size: 60px;
+    width: 85%;
     letter-spacing: -3px;
-}
-
-.enlaces div{
-    margin-bottom: 24px;
-    background-color: #2f2bd8;
-    padding: 24px 24px;
     color: white;
-    width: 20%;
-    margin-right: 20px;
 }
-
-.enlaces div :nth-child(1){
-    margin-right: 16px;
-}
-
-.enlaces{
-    display: flex;
-    /* background-color: aqua; */
-    justify-content: flex-end;
-    align-items: center;
-    height: 400px;
-}
-
-/* segunda seccion  */
-
-.segundaSeccion{
-    display: flex;
-    /* padding-top: 40px; */
-    padding-bottom: 40px;
-    font-family: 'Manrope', sans-serif;
-    /* margin-top: 120px; */
-
-}
-
-.segundaSeccion div{
-    border: 1px;
-    border-color: black;
-}
-
-.seccionItems{
-    display: flex;
-    flex-direction: column;
-    margin-top: 180px;
-}
-
-.seccionItems div a img{
-    width: 24px;
-}
-
-.seccionItems div{
-    padding: 24px 0;
-    display: flex;
-}
-
-.seccionItems div p{
-    width: 60%;
-    margin-right: 40px;
-}
-
-.seccionItems div h3{
-    width: 40%;
-}
-
-.tituloImagen img{
-    margin-top: 50px;
-    width: 80%;
-}
-
-.tituloImagen h2{
-    font-size: 36px;
-    font-weight: bold;
-    width: 43%;
-}
-
-/* TERCERA SECCION */
-
-.terceraSeccion{
-    display: flex;
-    font-family: 'Manrope', sans-serif;
-    width: 100%;
-    margin-top: 80px;
-    margin-bottom: 80px;
-}
-
-.infoDestacada{
-    background-color:rgb(21, 21, 21);
-    height: 500px;
-    width: 350px;
-    margin-right: 300px;
-    margin-left: 100px;
-    color: white;
-    padding: 24px 16px;
-}
-
-.terceraSeccion_segunda div{
-    padding: 24px 0;
-    margin-top: 24px;
-}
-
-.terceraSeccion_segunda div a img{
-    width: 24px;
-}
-
 
 /* PIE DE PAGINA */
 
 
-footer{
+.pie-de-inicio{
     display: flex;
     height: 250px;
     font-family: 'Manrope', sans-serif;
     padding-top: 24px;
-}
-
-footer div{
-    width: 50%;
-}
-
-footer div a img{
-    width: 24px;
-    margin-right: 16px;
-}
-
-footer div h5{
-    width: 40%;
-    margin-bottom: 40px;
+    justify-content: space-between;
+    align-items: center;
 }
 
 footer div h6{
     margin-bottom: 8px;
-    font-size: 16px;
+    font-size: 14px;
+    color:darkgray;
+    font-weight: 500;
+}
+
+.pie-de-inicio li{
+    list-style: none;
+}
+
+.pie-de-inicio li a{
+    text-decoration: none;
+    color:darkgray;
+    font-size: 14px;
+    margin-left: 24px;
+}
+
+.pie-de-inicio li a:hover{
+    color: white;
+}
+
+.pie-de-inicio ul{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 8px;
+}
+
+.marcas img{
+    opacity: 30%;
+    width: 180px;
+}
+
+.marcas img:nth-child(2){
+    margin-left: 36px;
+}
+
+.marcas img:hover{
+    opacity: 60%;
 }
 
 /* Descentralización */
