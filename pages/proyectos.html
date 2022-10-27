@@ -10,77 +10,106 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
-<body>
+<body id="cuerpoSecciones">
     <header>
-        <a href="#"><img src="/images/web3-logo.png" alt="logo-web3"></a>
+        <a href="../index.html"><img src="../images/web3-logo.png" alt=""></a>
         <nav>
-            <ul>
-                <li><a href="/index.html">Inicio</a></li>
-                <li><a href="/pages/historia.html">Historia</a></li>
-                <li><a href="/pages/descentralizacion.html">Descentralización</a></li>
+            <ul class="nav-secciones">
+                <li><a href="../index.html" class="navActivo">Inicio</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="./proyectos.html">Proyectos</a></li>
+                <li><a href="./research.html">Research</a></li>
+                <li><a href="./prensa.html">Prensa</a></li>
             </ul>
         </nav>
     </header>
-    <section class="primeraDescen">
-        <div class="primeraDescen_titulo">
-            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus atque illum consequatur harum ea nulla.</h3>
-            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-        </div>
-        <div class="primeraDescen_cajas">
-            <div>
-                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia similique, quam enim voluptatum facilis officiis qui pariatur? Impedit maiores repellat quos quam et, repudiandae distinctio, corporis animi beatae rem maxime!</p>
-                <a href="#"><img src="/assets/icon-flecha-derecha.png" alt=""></a>
+    <main id="mainProyectos">
+        <section class="sobreNosotros">
+            <h2>Proyectos</h2>
+            <p>Apoyamos equipos Web 3.0 y proyectos de código abierto a través de financiamiento, promoción, investigación y colaboraciones.</p>
+        </section>
+        <section class="linkProyectos">
+            <div class="cajalink">
+                <a href="#" class="enlacelink">
+                    <div class="imagencard">
+                        <img src="../images/polkador-logo_Mesa de trabajo 1.jpg" alt="">
+                    </div>
+                    <div class="contenidocard">
+                        <h2>Polkadot: el protocolo insignia de Web3 Foundation</h2>
+                        <p>Polkadot es una cadena fragmentada escalable y el primer protocolo que proporciona un entorno seguro para la compatibilidad entre cadenas.</p>
+                        <a href="#" class="masinfo">Mas informacion sobre Polkadot</a>
+                    </div>
+                </a>
             </div>
-            <div>
-                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia similique, quam enim voluptatum facilis officiis qui pariatur? Impedit maiores repellat quos quam et, repudiandae distinctio, corporis animi beatae rem maxime!</p>
-                <a href="#"><img src="/assets/icon-flecha-derecha.png" alt=""></a>
+            <div class="cajalink">
+                <a href="#" class="enlacelink">
+                    <div class="imagencard">
+                        <img src="../images/kusama_Mesa de trabajo 1.jpg" alt="">
+                    </div>
+                    <div class="contenidocard">
+                        <h2>Kusama: Red Canaria</h2>
+                        <p>Kusama es una red de desarrollo escalable basada en casi el mismo código base que Polkadot. Está diseñado para equipos que quieren moverse rápido e innovar.</p>
+                        <a href="#" class="masinfo">Mas informacion sobre Kusama</a>
+                    </div>
+                </a>
             </div>
+            <div class="cajalink">
+                <a href="#" class="enlacelink">
+                    <div class="imagencard">
+                        <img src="../images/xcmp_Mesa de trabajo 1.jpg" alt="">
+                    </div>
+                    <div class="contenidocard">
+                        <h2>XCMP: Paso de mensajes entre cadenas</h2>
+                        <p>Un subconjunto de Polkadot, XCMP es un protocolo de mensajería descentralizado que enfatiza la privacidad y la seguridad</p>
+                        <a href="#" class="masinfo">Obtenga más información sobre el protocolo de mensajería</a>
+                    </div>
+                </a>
+            </div>
+            <div class="cajalink">
+                <a href="#" class="enlacelink">
+                    <div class="imagencard">
+                        <img src="../images/mooc_Mesa de trabajo 1.jpg" alt="">
+                    </div>
+                    <div class="contenidocard">
+                        <h2>Web3MOOC: Cursos online masivos y abiertos</h2>
+                        <p>Un curso de 20 semanas sobre los fundamentos de Blockchain, que incluye descentralización, criptografía, minería, contratos inteligentes y consenso.</p>
+                        <a href="#" class="masinfo">Más información sobre los MOOC</a>
+                    </div>
+                </a>
+            </div>
+            <div class="cajalink">
+                <a href="#" class="enlacelink">
+                    <div class="imagencard">
+                        <img src="../images/summit_Mesa de trabajo 1.jpg" alt="">
+                    </div>
+                    <div class="contenidocard">
+                        <h2>Web3 Summit: Un evento anual para la comunidad</h2>
+                        <p>Web3 Summit ofrece una plataforma y una ocasión para unir a los miembros de la comunidad en torno a la visión de la web 3.0</p>
+                        <a href="#" class="masinfo">Obtenga más información sobre Web3 Summit</a>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <section class="nosotrosFinal">
+            <h2>¿Estás interesado en unirte al equipo que investiga, apoya y lanza estos proyectos?</h2>
+            <a href="#">Carreras de la fundación Web3</a>
+        </section>
+    </main>
+    <footer class="pie-de-inicio pieSecciones">
+        <div class="marcas">
+            <a href="#"><img src="../images/polkadot-white_Mesa de trabajo 1.png" alt="logo-polkadot"></a>
+            <a href="#"><img src="../images/kusama_Mesa de trabajo 1.png" alt="logo-kusama"></a>
         </div>
-    </section>
-    <section class="segundaDescen">
-        <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
         <div>
-            <img src="/images/roboto-tecno.jpg" alt="">
-            <img src="/images/roboto-tecno.jpg" alt="">
-            <img src="/images/roboto-tecno.jpg" alt="">
-        </div>
-    </section>
-    <section class="terceraDescen">
-        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
-        <div class="descen_cajas">
-            <div>
-                <img src="/assets/facebook.png" alt="">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi deserunt enim blanditiis rerum repellendus, excepturi labore accusantium repellat odit recusandae aliquam error sed id placeat aperiam? Aperiam beatae molestias necessitatibus.</p>
-            </div>
-            <div>
-                <img src="/assets/facebook.png" alt="">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi deserunt enim blanditiis rerum repellendus, excepturi labore accusantium repellat odit recusandae aliquam error sed id placeat aperiam? Aperiam beatae molestias necessitatibus.</p>
-            </div>
-            <div>
-                <img src="/assets/facebook.png" alt="">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi deserunt enim blanditiis rerum repellendus, excepturi labore accusantium repellat odit recusandae aliquam error sed id placeat aperiam? Aperiam beatae molestias necessitatibus.</p>
-            </div>
-            <div>
-                <img src="/assets/facebook.png" alt="">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi deserunt enim blanditiis rerum repellendus, excepturi labore accusantium repellat odit recusandae aliquam error sed id placeat aperiam? Aperiam beatae molestias necessitatibus.</p>
-            </div>
-        </div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim a nemo deleniti molestias odio, magnam voluptas numquam blanditiis asperiores maxime dolor consequatur dolorem aliquid dolores commodi iure! Fugit, illum libero.</p>
-    </section>
-    <footer>
-        <div>
-            <h5>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In reprehenderit debitis labore fugit iusto alias culpa libero vero distinctio placeat! Quasi accusamus explicabo ipsam quas sapiente dignissimos maiores velit! Veritatis.</h5>
-            <a href="#"><img src="/assets/facebook.png" alt="ir-facebook"></a>
-            <a href="#"><img src="/assets/instagram.png" alt="ir-instagram"></a>
-            <a href="#"><img src="/assets/whatsapp.png" alt="ir-whatsapp"></a>
-        </div>
-        <div>
-            <h6>Preguntas frecuentes</h6>
-            <h6>Politicas de privacidad</h6>
-            <h6>Ayuda</h6>
-            <h6>FAQs</h6>
+            <ul>
+                <li>
+                    <a href="#">Reporte de seguridad</a>
+                </li>
+                <li>
+                    <a href="#">Privacidad y Cookies</a>
+                </li>
+            </ul>
+            <h6>© 2022 Fundación Web3, Todos los derechos reservados.</h6>
         </div>
     </footer>
 </body>

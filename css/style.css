@@ -90,6 +90,21 @@ nav ul{
     width: 85%;
     letter-spacing: -3px;
     color: white;
+    animation-name: titulopri;
+    animation-duration: 0.5s;
+    animation-delay: 0s;
+}
+
+@keyframes titulopri {
+    0%{
+        transform: translateX(-150px);
+        opacity: 0%;
+    }
+
+    100%{
+        transform: translateX(0px);
+        opacity: 100%;
+    }
 }
 
 /* PIE DE PAGINA */
@@ -197,6 +212,20 @@ footer div h6{
     width: 60%;
     height: 100%;
     padding-top: 8rem;
+    animation-name: sobre-nosotros;
+    animation-duration: 0.5s;
+    animation-delay: 0s;
+}
+
+@keyframes sobre-nosotros {
+    0%{
+        opacity: 0%;
+        transform: translateY(-50px);
+    }    
+    100%{
+        opacity: 100%;
+        transform: translateY(0px);
+    }
 }
 
 .sobreNosotros h2{
@@ -220,6 +249,20 @@ footer div h6{
     margin-left: 10%;
     padding: 3%;
     margin-top: -6rem;
+    animation-name: cuadroInfo;
+    animation-duration: 0.5s;
+    animation-delay: 0s;
+}
+
+@keyframes cuadroInfo {
+    0%{
+        opacity: 0%;
+        transform: translateY(-50px);
+    }    
+    100%{
+        opacity: 100%;
+        transform: translateY(0px);
+    }
 }
 
 .cuadroInfo h3{
@@ -353,3 +396,64 @@ footer div h6{
     margin-right: 10%;
     margin-bottom: 5%;
 }
+
+/* estilos proyectos */
+
+#mainProyectos{
+    margin: 0 10%;
+    font-family: 'Manrope', sans-serif;
+}
+
+.imagencard img{
+    width: 500px;
+}
+
+
+.cajalink{
+    display: flex;
+    width: 85%;
+    align-content: center;
+    height: 241px;
+    margin-top: 8%;
+    border: 0.5px solid darkgray;
+}
+
+.contenidocard{
+    padding: 3% 5%;
+}
+
+.enlacelink{
+    text-decoration: none;
+    color: black;
+}
+
+.contenidocard h2{
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.contenidocard p{
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 3%;
+    width: 100%;
+    padding-bottom: 35px;
+    border-bottom: 1px solid darkgray;
+}
+
+.masinfo{
+    color: darkgray;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.masinfo:hover{
+    color: #767676;
+}
+
+.linkProyectos{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
