@@ -7,102 +7,221 @@
     <title>Web3 - Learning</title>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 </head>
-<body id="cuerpoSecciones">
-    <header>
-        <a href="../index.html"><img src="../images/web3-logo.png" alt=""></a>
-        <nav>
-            <ul class="nav-secciones">
-                <li><a href="../index.html" class="navActivo">Inicio</a></li>
-                <li><a href="./nosotros.html">Nosotros</a></li>
-                <li><a href="./proyectos.html">Proyectos</a></li>
-                <li><a href="./research.html">Research</a></li>
-                <li><a href="./prensa.html">Prensa</a></li>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+
+          <a class="navbar-brand" href="../index.html">
+            <img src="../images/web3-logo.png" width="120" alt="Logo-web3">
+          </a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active text-dark " aria-current="page" href="../index.html">Inicio</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link  text-dark" href="./pages/nosotros.html">Nosotros</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#">Proyectos</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#">Research</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#">Prensa</a>
+              </li>
+
             </ul>
-        </nav>
-    </header>
+          </div>
+        </div>
+      </nav>
+
+
     <main>
-        <section class="nosotros-primera">
-            <div class="sobreNosotros">
-                <h2>Sobre nosotros</h2>
-                <p>Nuestra misión es fomentar aplicaciones de vanguardia para protocolos de software web descentralizados.</p>
-                <p>Nuestra pasión es ofrecer la Web 3.0, una Internet descentralizada y justa donde los usuarios controlan sus propios datos, identidad y destino.</p>
+        <section class=" container nosotros-primera">
+            <div class="row justify-content-between">
+                <div class="col-sm-12 col-lg-7 sobreNosotros">
+                    <h2>Sobre nosotros</h2>
+                    <p>Nuestra misión es fomentar aplicaciones de vanguardia para protocolos de software web descentralizados.</p>
+                    <p>Nuestra pasión es ofrecer la Web 3.0, una Internet descentralizada y justa donde los usuarios controlan sus propios datos, identidad y destino.</p>
+                </div>
+                <div class="col-sm-12 col-lg-4" id="cuadroInformacion">
+                    <h3>Web3 Foundation cree en una internet donde:</h3>
+                    <ul>
+                        <li>Los usuarios son dueños de sus propios datos, no de las corporaciones</li>
+                        <li>Las transacciones digitales globales son seguras</li>
+                        <li>Los intercambios en línea de información y valor están descentralizados</li>
+                    </ul>
+                </div>
+                
             </div>
-            <div class="cuadroInfo">
-                <h3>Web3 Foundation cree en una internet donde:</h3>
-                <ul>
-                    <li>Los usuarios son dueños de sus propios datos, no de las corporaciones</li>
-                    <li>Las transacciones digitales globales son seguras</li>
-                    <li>Los intercambios en línea de información y valor están descentralizados</li>
-                </ul>
-            </div>
+            
         </section>
-        <section class="nosotros-segunda">
-            <div class="videoFrame">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/JPGNvKy6DTA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <section class="container" id="videoPrimero">
+            
+            <div class="row " id="videoContainer">
+                <div class="col-sm-12 col-lg-6 videoFrame">
+                    <iframe width="100%" height="310" src="https://www.youtube.com/embed/JPGNvKy6DTA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="col-sm-12 col-lg-6  infoVideo">
+                    <h2>¿Qué es exactamente la Web 3.0?</h2>
+                    <h3>Juan Benet</h3>
+                    <p>Juan Benet, fundador y director ejecutivo de Protocol Labs, habla sobre la visión de la Web 3.0 y cómo se relaciona con la humanidad que pasa de una civilización anterior a la informática a una civilización posterior a la informática.</p>
+                </div>
             </div>
-            <div class="infoVideo">
-                <h2>¿Qué es exactamente la Web 3.0?</h2>
-                <h2>Juan Benet</h2>
-                <p>Juan Benet, fundador y director ejecutivo de Protocol Labs, habla sobre la visión de la Web 3.0 y cómo se relaciona con la humanidad que pasa de una civilización anterior a la informática a una civilización posterior a la informática.</p>
+            <div class="row videoSegundo">
+                <div class="col-sm-12 col-lg-6 videoFrame"><iframe width="100%" height="310" src="https://www.youtube.com/embed/lH1pEE0W3ug" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                <div class="col-sm-12 col-lg-6  infoVideo">
+                    <h2>El viaje a la Web 3.0</h2>
+                    <h3>Gavin Madera</h3>
+                    <p>El fundador y presidente de Web3 Foundation, el Dr. Gavin Wood, analiza el espíritu y la visión detrás de la Web 3.0 y propone la pila de tecnología Web 3.0 como una forma de medir nuestro progreso.</p>
+                </div>
             </div>
+            
         </section>
-        <section class="nosotros-segunda">
-            <div class="infoVideo">
-                <h2>El viaje a la Web 3.0</h2>
-                <h2>Gavin Madera</h2>
-                <p>El fundador y presidente de Web3 Foundation, el Dr. Gavin Wood, analiza el espíritu y la visión detrás de la Web 3.0 y propone la pila de tecnología Web 3.0 como una forma de medir nuestro progreso.</p>
+
+        
+
+        <section class="container fundadores" id="fundadores">
+            <div class="row">
+                <div class="col-sm-12 col-lg-3 titulo-fundadores">
+                    <h2>Consejo de la Fundación Web3</h2>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="personaFundadores">
+                        <img src="../images/gavin.jpg" alt="gavin">
+                        <h3>Dr. Gavin Madera</h3>
+                        <h4>Fundador</h4>
+                        <p>El Dr. Gavin Wood es el fundador y actual director de Parity Technologies Ltd. Ha diseñado herramientas de análisis y lenguajes de programación de última generación, además de ser cofundador de varias empresas emergentes de tecnología. El Dr. Wood se ha presentado ante numerosas audiencias de todo el mundo, desde conferencias magistrales en conferencias regionales de tecnología hasta reflexiones sobre el futuro de los sistemas legales en Harvard. Tiene un doctorado en Ciencias de la Computación de la Universidad de York.</p>
+                        <p>Anteriormente, fue director de tecnología y cofundador del Proyecto Ethereum. Es el co-diseñador del Protocolo Ethereum, autor de su especificación formal, y creó y escribió la primera implementación funcional de Ethereum. El Dr. Wood diseñó y administró el lenguaje Solidity, fue el jefe de proyecto del IDE y diseñó e implementó el protocolo Whisper.</p>
+                    </div>
+                </div>    
+                <div class="col-sm-12 col-md-6 col-lg-3 ">
+                    <div class="personaFundadores">
+                        <img src="../images/aeron.jpg" alt="gavin">
+                        <h3>Dr. Aeron Buchanan</h3>
+                        <h4>Ingeniero</h4>
+                        <p>El Dr. Aeron Buchanan ha estado involucrado con la visión de la Web 3.0 desde sus inicios, se unió al proyecto Ethereum como modelador matemático en 2014 y pasó a ser jefe de operaciones europeas y cumplimiento normativo. Recibió su doctorado del Departamento de Robótica de la Universidad de Oxford en el campo de la visión artificial después de trabajar como diseñador de algoritmos para la industria de efectos especiales. Estudió ingeniería y ciencias de la computación para obtener su título universitario.</p>
+                        <p>Ha diseñado algoritmos para vehículos aéreos no tripulados, ha puesto en marcha empresas tecnológicas que construyen controladores de espectáculos de luces y tecnología blockchain y ha actuado como consultor de laboratorios de investigación económica y ecológica. Actualmente es asesor de varios proyectos importantes de blockchain que tienen como objetivo hacer avances en la tecnología de plataforma de consenso y brindar sus beneficios a la sociedad y la economía más fácilmente.</p>
+                    </div>
+                </div>    
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="personaFundadores">
+                        <img src="../images/reto.jpg" alt="">
+                        <h3>Reto Trinkler</h3>
+                        <h4>Ingeniero</h4>
+                        <p>Reto Trinkler es el fundador de Trinkler Software. También es cofundador de Melonport AG, una plataforma basada en blockchain que permite a los participantes establecer, administrar e invertir en fondos de inversión digitales regulados por tecnología.</p>
+                        <p>Con experiencia en matemáticas de ETH Zurich, ha estado desarrollando contratos inteligentes de Ethereum desde el inicio de la plataforma. Antes de eso, el Sr. Trinkler desarrolló un algoritmo comercial rentable para intercambios de apuestas deportivas en C++.</p>
+                    </div>
+                </div>
             </div>
-            <div class="videoFrame"><iframe width="560" height="315" src="https://www.youtube.com/embed/lH1pEE0W3ug" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-        </section>
-        <section class="fundadores">
-            <div>
-                <h2>Consejo de la Fundación Web3</h2>
+
+        <section class="container nosotrosFinal">
+            <div class="row">
+                <div class="col infoFinal">
+                    <h2>¿Quiere obtener más información sobre nuestros protocolos de cadena de bloques y el trabajo de código abierto?</h2>
+                    <a href="#">Proyectos de la Fundación Web3</a>
+                </div>
             </div>
-            <div class="personaFundadores">
-                <img src="../images/gavin.jpg" alt="">
-                <h3>Dr. Gavin Madera</h3>
-                <h4>Fundador</h4>
-                <p>El Dr. Gavin Wood es el fundador y actual director de Parity Technologies Ltd. Ha diseñado herramientas de análisis y lenguajes de programación de última generación, además de ser cofundador de varias empresas emergentes de tecnología. El Dr. Wood se ha presentado ante numerosas audiencias de todo el mundo, desde conferencias magistrales en conferencias regionales de tecnología hasta reflexiones sobre el futuro de los sistemas legales en Harvard. Tiene un doctorado en Ciencias de la Computación de la Universidad de York.</p>
-                <p>Anteriormente, fue director de tecnología y cofundador del Proyecto Ethereum. Es el co-diseñador del Protocolo Ethereum, autor de su especificación formal, y creó y escribió la primera implementación funcional de Ethereum. El Dr. Wood diseñó y administró el lenguaje Solidity, fue el jefe de proyecto del IDE y diseñó e implementó el protocolo Whisper.</p>
-            </div>
-            <div class="personaFundadores">
-                <img src="../images/aeron.jpg" alt="">
-                <h3>Dr. Aeron Buchanan</h3>
-                <p>El Dr. Aeron Buchanan ha estado involucrado con la visión de la Web 3.0 desde sus inicios, se unió al proyecto Ethereum como modelador matemático en 2014 y pasó a ser jefe de operaciones europeas y cumplimiento normativo. Recibió su doctorado del Departamento de Robótica de la Universidad de Oxford en el campo de la visión artificial después de trabajar como diseñador de algoritmos para la industria de efectos especiales. Estudió ingeniería y ciencias de la computación para obtener su título universitario.</p>
-                <p>Ha diseñado algoritmos para vehículos aéreos no tripulados, ha puesto en marcha empresas tecnológicas que construyen controladores de espectáculos de luces y tecnología blockchain y ha actuado como consultor de laboratorios de investigación económica y ecológica. Actualmente es asesor de varios proyectos importantes de blockchain que tienen como objetivo hacer avances en la tecnología de plataforma de consenso y brindar sus beneficios a la sociedad y la economía más fácilmente.</p>
-            </div>
-            <div class="personaFundadores">
-                <img src="../images/reto.jpg" alt="">
-                <h3>Reto Trinkler</h3>
-                <p>Reto Trinkler es el fundador de Trinkler Software. También es cofundador de Melonport AG, una plataforma basada en blockchain que permite a los participantes establecer, administrar e invertir en fondos de inversión digitales regulados por tecnología.</p>
-                <p>Con experiencia en matemáticas de ETH Zurich, ha estado desarrollando contratos inteligentes de Ethereum desde el inicio de la plataforma. Antes de eso, el Sr. Trinkler desarrolló un algoritmo comercial rentable para intercambios de apuestas deportivas en C++.</p>
-            </div>
-        </section>
-        <section class="nosotrosFinal">
-            <h2>¿Quiere obtener más información sobre nuestros protocolos de cadena de bloques y el trabajo de código abierto?</h2>
-            <a href="#">Proyectos de la Fundación Web3</a>
+            
         </section>
     </main>
-    <footer class="pie-de-inicio pieSecciones">
-        <div class="marcas">
-            <a href="#"><img src="../images/polkadot-white_Mesa de trabajo 1.png" alt="logo-polkadot"></a>
-            <a href="#"><img src="../images/kusama_Mesa de trabajo 1.png" alt="logo-kusama"></a>
+
+
+    <footer id="pie">
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-12 col-lg-3 imagen-web">
+                    <a href="#"><img src="../images/web3-logo-white.png" alt="web3-logo"></a>
+                </div>
+    
+                <div class="col-sm-12 col-lg-3 listaNav">
+                    <ul>
+                        <li>
+                            <a href="#">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="#">Nosotros</a>
+                        </li>
+                        <li>
+                            <a href="#">Proyectos</a>
+                        </li>
+                        <li>
+                            <a href="#">Research</a>
+                        </li>
+                        <li>
+                            <a href="#">Prensa</a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="col-sm-12 col-lg-6 logos-enlaces">
+                    <ul>
+                        <li>
+                            <a href="#"><img src="../assets/github-01.png" alt="Logo-github"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../assets/reddit-01.png" alt="Logo-reddit" ></a></li>
+                        <li>
+                            <a href="#"><img src="../assets/youtube-01.png" alt="Logo-youtube" ></a></li>
+                        <li>
+                            <a href="#"><img src="../assets/twitter-01.png"  alt="Logo-twitter" ></a></li>
+                    </ul>
+                </div>
+    
+                <div class="col-sm-12 col-md-12 col-lg-6" id="pie-secciones">
+                    <div>
+                        <a href="#"><img src="../images/polkadot-white_Mesa de trabajo 1.png" alt="logo-polkadot"></a>
+
+                        <a href="#"><img src="../images/kusama_Mesa de trabajo 1.png" alt="logo-kusama"></a>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                <a href="#">Reporte de seguridad</a>
+                            </li>
+                            <li>
+                                <a href="#">Privacidad y Cookies</a>
+                            </li>
+                        </ul>
+                        <span class="derechos-reservados">
+                            <h6>© 2022 Fundación Web3. Todos los derechos reservados.</h6>
+                        </span>
+
+                    </div>
+
+                    
+
+                </div>
+                </div>
+            </div>
+            </div>
         </div>
-        <div>
-            <ul>
-                <li>
-                    <a href="#">Reporte de seguridad</a>
-                </li>
-                <li>
-                    <a href="#">Privacidad y Cookies</a>
-                </li>
-            </ul>
-            <h6>© 2022 Fundación Web3, Todos los derechos reservados.</h6>
-        </div>
+
+        
+        
+        
     </footer>
         
+
+        <!-- script bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 </html>

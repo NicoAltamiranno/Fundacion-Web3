@@ -1,554 +1,730 @@
-*,
-*:before,
-*:after{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Manrope';
 }
 
-#cuerpo{
-    /* margin-left: 10%;
-    margin-right: 10%; */
-    background-image: url(/images/programacion-fondo.jpg);
+#body{
+    background-image: url(../images/programacion-fondo.jpg);
 }
 
-/* ESTILOS MENU DE NAVEGACIÓN */
-header{
-    padding: 1.5rem 0;
-    display: flex;
-    justify-content: space-between;
-    margin: 0 10%;
-}
+/* ====================NAVBAR INDEX==================== */
 
-/* header a img{
-    width: 40%;
-} */
-
-/* nav{
-    width: 40%;
-    display: flex;
-} */
-
-nav ul{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-/* .menu-nav li{
-    list-style: none;
-    font-family: 'Manrope', sans-serif;
-
-} */
-
-.menu-nav div a{
-    font-weight:500;
+#navbarNav li>a{
     font-size: 18px;
-    color: white;
-    text-decoration: none;
-    /* padding-bottom: 0.3rem; */
-    padding: 0 10px;
-    position: relative;
+    opacity: 80%;
+    margin-left: 15px;
 }
 
-.menu-nav div a:after{
-    content: "";
-    position: absolute;
-    background-color: white;
-    height: 4px;
-    width: 0;
-    left: 0;
-    bottom: -10px;
-    transition: 0.3s;
-}
-
-.menu-nav div a:hover:after{
-    width: 100%;
-}
-
-.navbar-nav{
-    width: 50%;
-    justify-content: space-around;
-    font-family: 'Manrope', sans-serif;
-}
-
-.navbar-nav a:hover{
-    color: white;
-}
-
-.navbar{
-    margin-top: 2%;
-}
-
-.navbar-brand{
-    width: 50%;
+#navbarNav li>a:hover{
+    opacity: 100%;
 }
 
 
-/* ESTILOS MAIN */
+/* ==================SECCION HERO================ */
 
-.infoHero {
-    /* margin: 0 10%; */
-    padding:80px 0;
-    font-family: 'Manrope', sans-serif;
-    height: auto;
+#seccion-hero{
+    height: 700px;
 }
 
-.infoHero h1{
-    font-weight:900;
-    font-size: 4rem;
-    width: 85%;
-    letter-spacing: -3px;
-    color: white;
-    animation-name: titulopri;
-    animation-duration: 0.5s;
-    animation-delay: 0s;
+#seccion-hero h1{
+    font-weight: bold;
+    margin-top: 120px;
+    font-size: 54px;
+    letter-spacing: -2px;
+    width: 88%;
 }
 
-@keyframes titulopri {
-    0%{
-        transform: translateX(-150px);
-        opacity: 0%;
-    }
+/* ==================FOOTER================ */
 
-    100%{
-        transform: translateX(0px);
-        opacity: 100%;
-    }
+#pie-de-pagina img{
+    width: 150px;
+    opacity: 40%;
 }
 
-/* PIE DE PAGINA */
+#pie-de-pagina img:hover{
+    opacity: 100%;
+}
 
-
-.pie-de-inicio{
+#pie-de-pagina ul{
     display: flex;
-    height: 250px;
-    font-family: 'Manrope', sans-serif;
-    padding-top: 24px;
-    justify-content: space-between;
-    align-items: center;
-    /* margin: 0 10%; */
-}
-
-.footer-link{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-
-.pie-de-inicio div h6{
-    font-size: 0.8rem;
-    color: darkgray;
-    font-weight: 500;
-}
-
-.pie-de-inicio li{
-    list-style: none;
-}
-
-.pie-de-inicio li a{
-    text-decoration: none;
-    color:darkgray;
-    font-size: 14px;
-    margin-left: 24px;
-}
-
-.pie-de-inicio li a:hover{
-    color: white;
-}
-
-.pie-de-inicio ul{
-    display: flex;
+    padding: 0;
+    margin-top: 25px;
     justify-content: flex-end;
-    margin-bottom: 8px;
 }
 
-.marcas a img{
-    opacity: 30%;
-    width: 180px;
+#pie-de-pagina ul>li{
+    list-style: none;
+    margin-left: 25px;
 }
 
-.marcas a:nth-child(2){
-    margin-left: 36px;
-}
+/* #pie-de-pagina ul>li:not(last-child){
+    margin-right: 25px;
+} */
 
-.marcas img:hover{
+
+#pie-de-pagina ul>li>a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
     opacity: 60%;
 }
 
-/* atributos para todas las secciones, exceptuando inicio */
-
-#cuerpoSecciones{
-    /* margin-left: 10%;
-    margin-right: 10%; */
+#pie-de-pagina ul>li>a:hover{
+    opacity: 100%;
 }
 
-.nav-secciones li{
-    list-style: none;
-    font-family: 'Manrope', sans-serif;
 
-}
-.nav-secciones li a{
-    font-weight:500;
-    font-size: 18px;
-    color: black;
-    text-decoration: none;
-    /* padding-bottom: 0.3rem; */
-    padding: 0 10px;
-    position: relative;
-}
-
-.nav-secciones li a:after{
-    content: "";
-    position: absolute;
-    background-color: black;
-    height: 4px;
-    width: 0;
-    left: 0;
-    bottom: -10px;
-    transition: 0.3s;
-}
-
-.nav-secciones li a:hover:after{
-    width: 100%;
-}
-
-/*  */
-
-.nosotros-primera{
-    margin: 0 10%;
-    height: 750px;
-    display:flex;
-    align-items: center;
-    font-family: 'Manrope', sans-serif;
-}
-
-.sobreNosotros{
-    width: 60%;
-    height: 100%;
-    padding-top: 8rem;
-    animation-name: sobre-nosotros;
-    animation-duration: 0.5s;
-    animation-delay: 0s;
-}
-
-@keyframes sobre-nosotros {
-    0%{
-        opacity: 0%;
-        transform: translateY(-50px);
-    }    
-    100%{
-        opacity: 100%;
-        transform: translateY(0px);
-    }
-}
-
-.sobreNosotros h2{
-    font-size: 2rem;
-    margin-bottom: 2rem;
-    font-weight: bold;
-}
-
-.sobreNosotros p{
-    font-size: 2rem;
-    font-weight: 500;
-    width: 75%;
-    margin-bottom: 2%;
-}
-
-.cuadroInfo{
-    background-color: black;
-    height: 400px;
-    width: 330px;
-    color: white;
-    margin-left: 10%;
-    padding: 3%;
-    margin-top: -6rem;
-    animation-name: cuadroInfo;
-    animation-duration: 0.5s;
-    animation-delay: 0s;
-}
-
-@keyframes cuadroInfo {
-    0%{
-        opacity: 0%;
-        transform: translateY(-50px);
-    }    
-    100%{
-        opacity: 100%;
-        transform: translateY(0px);
-    }
-}
-
-.cuadroInfo h3{
-    margin-bottom: 2rem;
-}
-
-.cuadroInfo ul{
-    list-style: none;
-}
-
-.cuadroInfo ul li{
-    margin-bottom: 16px;
-    font-size: 14px;
-    letter-spacing: 0.5px;
-}
-
-.nosotros-segunda{
+.derechos-reservados{
     display: flex;
-    height: 500px;
-    margin: 0 10%;
-    /* background-color: beige; */
+    justify-content: flex-end;
 }
 
-.videoFrame{
-    margin-right: 8rem;
+.derechos-reservados h6{
+    font-size: 16px;
+    color: white;
+    opacity: 60%;
+}
+
+
+
+/* =========================================== */
+
+
+
+    /* ============= SECCION NOSOTROS===== */
+    .sobreNosotros h2{
+        font-size: 32px;
+        font-weight: bold;
+        margin: 10% 0;
+    }
+    
+    .sobreNosotros p{
+        font-size: 28px;
+        font-weight: 600;
+    }
+
+    #cuadroInformacion{
+        background-color: black;
+        padding: 2%;
+        height: 350px;
+        margin-top: 60px;
+    }
+    
+
+    
+    #cuadroInformacion h3{
+        color: white;
+        font-size: 20px;
+    }
+
+    #cuadroInformacion ul{
+        margin-top: 25px;
+        padding-left: 0%;
+    }
+
+    #cuadroInformacion ul li{
+        list-style: none;
+        margin-bottom: 25px;
+        color: white;
+    }
+
+/* ============= SECCION VIDEOS===== */
+
+#videoPrimero{
+    margin-top: 50px;
+}
+
+#videoContainer{
+    display: flex;
+    margin-bottom: 50px;
 }
 
 .infoVideo{
-    text-align: center;
-    margin-top: 3rem;
-    font-family: 'Manrope', sans-serif;
-    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    padding-top: 20px;
 }
 
 .infoVideo h2{
-    font-size: 2rem;
+    font-weight: bold;
 }
 
-.infoVideo h2:nth-child(2){
-    color: grey;
-    margin-bottom: 2.5rem;
+.infoVideo h3{
+    opacity: 60%;
 }
 
 .infoVideo p{
-    width: 80%;
-    margin: auto;
+    text-align:left;
+    margin-top: 10px;
 }
 
 
-.fundadores{
-    display: flex;
-    font-family: 'Manrope', sans-serif;
-    margin: 0 10%;
+
+
+/* =================Fundadores============= */
+
+/* =================Fundadores============= */
+
+#fundadores{
+    margin-top: 50px;
 }
 
-.fundadores div{
-    width: 25%;
-}
-
-.fundadores div h2{
-    width: 80%;
-    font-size: 1.8rem;
-    font-weight:900;
-}
-
-.personaFundadores img{
-    width: 250px;
-    margin-bottom: 2rem;
+.titulo-fundadores h2{
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .personaFundadores{
-    padding-right: 1rem;
+    margin-top: 0px;
+}
+
+.personaFundadores img{
+    width: 70%;
+    align-self: center;
+    margin-bottom: 15px;
+}
+
+.personaFundadores h3{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.personaFundadores h4{
+    font-size: 16px;
+    opacity: 80%;
+    margin-bottom: 20px;
 }
 
 .personaFundadores p{
     font-size: 14px;
-    line-height: 21px;
     font-weight: 500;
-    width: 87%;
-    margin-top: 12px;
-}
-
-.personaFundadores h3{
-    font-weight: 600;
-}
-
-.personaFundadores h4{
-    color: darkgray;
-    font-weight: 400;
-    font-size: 16px;
 }
 
 .nosotrosFinal{
-    font-family: 'Manrope', sans-serif;
-    height: 600px;
-    text-align: center;
+    margin-top: 50px;
+}
+
+.infoFinal{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+
 }
 
-.nosotrosFinal h2{
-    width: 34%;
-    margin-bottom: 2%;
-    font-weight: 900;
+.infoFinal h2{
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    width: 60%;
 }
 
-.nosotrosFinal a{
+.infoFinal a{
+    text-align: center;
+    margin-top: 25px;
     text-decoration: none;
-    color: darkgray;
-    font-size: 16px;
-    font-weight: 500;
+    color: black;
+    opacity: 60%;
 }
 
-.nosotrosFinal a:hover{
-    color:rgb(67, 67, 67);
-}
-
-/* Pie de pagina */
-
-.pieSecciones{
-    background-image: url(/images/programacion-fondo.jpg);
-    height: 500px;
-    align-items: flex-end;
-    margin: 0;
-}
-
-.pieSecciones div{
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-bottom: 5%;
-}
-
-/* estilos proyectos */
-
-#mainProyectos{
-    margin: 0 10%;
-    font-family: 'Manrope', sans-serif;
-}
-
-.imagencard img{
-    width: 500px;
-}
-
-
-.cajalink{
-    display: flex;
-    width: 85%;
-    align-content: center;
-    height: 241px;
-    margin-top: 8%;
-    border: 0.5px solid darkgray;
-}
-
-.contenidocard{
-    padding: 3% 5%;
-}
-
-.enlacelink{
-    text-decoration: none;
+.infoFinal a:hover{
+    opacity: 100%;
     color: black;
 }
 
-.contenidocard h2{
-    margin-bottom: 20px;
-    font-size: 1.5rem;
+
+/* ==========FOOTER============== */
+
+#pie{
+    margin-top: 50px;
+    padding-top: 50px;
+    background-image: url(../images/programacion-fondo.jpg);
 }
 
-.contenidocard p{
-    font-size: 14px;
-    font-weight: 500;
-    margin-bottom: 3%;
-    width: 100%;
-    padding-bottom: 35px;
-    border-bottom: 1px solid darkgray;
+.imagen-web img{
+    width: 50%;
 }
 
-.masinfo{
-    color: darkgray;
+
+.imagen-web{
+    padding-top: 0px;
+    padding-bottom: 50px;
+}
+.imagen-web img{
+    width: 50%;
+}
+
+
+.listaNav ul li{
+    list-style: none;
+
+}
+
+.listaNav ul{
+    padding: 0;
+}
+
+.listaNav li a{
     text-decoration: none;
+    color: white;
+    opacity: 90%;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.listaNav li a:hover{
+    opacity: 100%;
+}
+
+.logos-enlaces ul{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    padding-left: 0;
+}
+
+.logos-enlaces ul li{
+    list-style: none;
+}
+
+.logos-enlaces li a img{
+    width: 40px;
+}
+
+#pie-secciones{
+    display: flex;
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    justify-content: space-between;
+}
+
+#pie-secciones div>ul>li{
+    list-style: none;
+    margin-left: 25px;
+    padding: 0;
+}
+#pie-secciones div>ul>li>a{
+    text-decoration: none;
+    color: white;
+    opacity: 60%;
     font-size: 14px;
 }
 
-.masinfo:hover{
-    color: #767676;
-}
-
-.linkProyectos{
+#pie-secciones ul{
     display: flex;
-    align-items: center;
-    flex-direction: column;
+    justify-content: flex-end;
+
+}
+#pie-secciones img{
+    width: 30%;
+    opacity: 60%;
+    margin-right: 25px;
+}
+#pie-secciones img:hover{
+    opacity: 100%;
 }
 
-@media screen and (max-width: 800px) {
-    header{
-        width: 100%;
-        flex-direction: column;
-        margin-left: 0%;
-        margin-right: 0%;
-        align-items: center;
-        margin-top: 5%;
+#pie-secciones div>span>h6{
+    text-align: right;
+    width: 100%;
+    font-size: 14px;
+
+}
+
+
+
+
+
+/* ================================================ */
+/* ================== RESPONSIVE ====================== */
+
+@media screen and (max-width:576px) {
+    #navbarNav{
+        margin-top: 3%;
+        justify-content: flex-start;
     }
 
-    header a img{
-        justify-items: center;
+    #navbarNav li>a{
+        font-size: 20px;
+        opacity: 80%;
+
+    }
+
+    #navbarNav li>a:hover{
+        opacity: 100%;
+    }
+
+    #seccion-hero{
+        height: 700px;
+    }
+    
+    #seccion-hero h1{
+        font-size: 36px;
+        width: 100%;
+    }
+
+    #pie-de-pagina img{
+        margin-right: 25px;
+    }
+
+    #pie-de-pagina ul>li{
+        margin-right: 25px;
+        margin-left: 0;
+    }
+
+    #pie-de-pagina ul{
+        justify-content: flex-start;
+    }
+
+    #pie-de-pagina ul>li>a{
+        font-size: 14px;
+    }
+
+    .derechos-reservados{
+        justify-content: flex-start;
+    }
+
+    .derechos-reservados h6{
+        font-size: 14px;
+    }
+
+    /* ============= SECCION NOSOTROS RSPV===== */
+    .sobreNosotros h2{
+        font-size: 32px;
+        font-weight: bold;
+        margin: 10% 0;
+    }
+    
+    .sobreNosotros p{
+        font-size: 28px;
+        font-weight: 600;
+    }
+    
+
+    #cuadroInformacion{
+        padding: 5%;
+        height: 288px;
+        margin-top: 28px;
+    }
+    
+    .cuadroInfo h3{
+        color: white;
+        font-size: 20px;
+    }
+
+    .cuadroInfo ul{
+        margin-top: 25px;
+        padding-left: 0%;
+    }
+
+    .cuadroInfo ul li{
+        list-style: none;
+        margin-bottom: 25px;
+        color: white;
+    }
+
+    
+
+    /* ================================= */
+
+
+    /* ============= SECCION VIDEOS===== */
+
+    #videoPrimero{
+        margin-top: 50px;
+    }
+
+    #videoContainer{
+        display: flex;
+        margin-bottom: 50px;
+    }
+
+    .infoVideo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20px;
+    }
+
+    .infoVideo h2{
+        font-weight: bold;
+    }
+
+    .infoVideo h3{
+        opacity: 60%;
+    }
+
+    .infoVideo p{
+        text-align: center;
+    }
+
+/* =================Fundadores============= */
+
+    #fundadores{
+        margin-top: 50px;
+    }
+
+    .titulo-fundadores h2{
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .personaFundadores{
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    .personaFundadores img{
+        width: 70%;
+        align-self: center;
+        margin-bottom: 15px;
+    }
+
+    .personaFundadores h3{
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .personaFundadores h4{
+        font-size: 16px;
+        opacity: 80%;
+        margin-bottom: 20px;
+    }
+
+/* ========Seccion final>Nosotros===== */
+    .nosotrosFinal{
+        margin-top: 50px;
+    }
+    
+    .infoFinal{
+        display: flex;
+        flex-direction: column;
+    
+    }
+    
+    .infoFinal h2{
+        font-size: 22px;
+        font-weight: bold;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .infoFinal a{
+        text-align: center;
+        margin-top: 25px;
+        text-decoration: none;
+        color: black;
+        opacity: 60%;
+    }
+    
+    .infoFinal a:hover{
+        opacity: 100%;
+        color: black;
+    }
+
+    /* ============PIE DE PAGINA=========== */
+
+    .imagen-web{
+        padding-top: 25px;
+        padding-bottom: 50px;
+    }
+    .imagen-web img{
         width: 50%;
     }
 
-    header nav{
-        width: 80%;
-        margin-top: 8%;
+
+    .listaNav ul li{
+        list-style: none;
+
     }
 
-    header a{
+    .listaNav ul{
+        padding: 0;
+    }
+
+    .listaNav li a{
+        text-decoration: none;
+        color: white;
+        opacity: 90%;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .listaNav li a:hover{
+        opacity: 100%;
+    }
+
+    .logos-enlaces ul{
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
+        margin-top: 25px;
+        margin-bottom: 50px;
+        padding-left: 0;
     }
 
-    .menu-nav li a{
-        font-size: 1.5rem;
+    .logos-enlaces ul li{
+        list-style: none;
     }
 
-    .infoHero {
-        margin: 12% 10%;
-        padding:0 0;
-        height: auto;
+    .logos-enlaces li a img{
+        width: 40px;
+    }
+
+    #pie-secciones{
+        display: flex;
+        width: 100%;
+        margin-top: 0px;
+        flex-direction: column;
     }
     
-    .infoHero h1{
-        font-size: 3rem;
+    #pie-secciones div>ul>li{
+        margin-left: 0;
+        margin-right: 25px;
+    }
+    #pie-secciones div>ul>li>a{
+        text-decoration: none;
+        color: white;
+        opacity: 60%;
+        font-size: 14px;
+    }
+    
+    #pie-secciones ul{
+        display: flex;
+        justify-content: flex-start;
+        padding: 0;
+        margin-top: 25px;
+    
+    }
+    #pie-secciones img{
+        width: 30%;
+        opacity: 60%;
+        margin-right: 25px;
+    }
+    #pie-secciones img:hover{
+        opacity: 100%;
+    }
+    
+    #pie-secciones div>span>h6{
+        text-align: left;
+        width: 100%;
+        font-size: 14px;
+    
+    }
+    
+
+
+}
+
+@media screen and (max-width:992px){
+    #navbarNav{
+        margin-top: 3%;
+        justify-content: flex-start;
+    }
+
+    #seccion-hero{
+        height: 700px;
+    }
+    
+    #seccion-hero h1{
+        font-size: 36px;
         width: 100%;
     }
 
-    .pie-de-inicio{
-        flex-direction: column;
-        height: auto;
-        padding-top: 0px;
-        align-items: flex-start;
-        margin-top: 5%;
+    #pie-de-pagina img{
+        margin-right: 25px;
     }
 
-    .pie-de-inicio li a{
-        font-size: 1rem;
-        margin-left: 0px;
+    #pie-de-pagina ul>li{
+        margin-right: 25px;
+        margin-left: 0;
     }
-    
-    
-    .pie-de-inicio ul{
-        display: flex;
+
+    #pie-de-pagina ul{
         justify-content: flex-start;
-        margin-bottom: 8px;
     }
 
-    .pie-de-inicio div ul li{
-        padding-right: 5%;
+    #pie-de-pagina ul>li>a{
+        font-size: 14px;
     }
 
-    .pie-de-inicio div h6{
-        font-size: 1.2rem;
+    .derechos-reservados{
+        justify-content: flex-start;
+    }
+
+    .derechos-reservados h6{
+        font-size: 14px;
+    }
+
+/* ============= SECCION NOSOTROS RSPV===== */
+    .sobreNosotros h2{
+        font-size: 32px;
+        font-weight: bold;
+        margin: 10% 0;
+    }
+        
+    .sobreNosotros p{
+        font-size: 28px;
+        font-weight: 600;
+    }
+        
+    
+    #cuadroInformacion{
+        padding: 5%;
+        height: auto;
+        margin-top: 28px;
+    }
+        
+    .cuadroInfo h3{
+        color: white;
+        font-size: 20px;
     }
     
-    .marcas a img{
-        opacity: 30%;
-        width: 40%;
+    .cuadroInfo ul{
+        margin-top: 25px;
+        padding-left: 0%;
     }
-
-    .marcas{
-        margin-bottom: 5%;
-    }
-
     
+    .cuadroInfo ul li{
+        list-style: none;
+        margin-bottom: 25px;
+        color: white;
+    }
+
+        /* ============= SECCION VIDEOS===== */
+
+        #videoPrimero{
+            margin-top: 50px;
+        }
+    
+        #videoContainer{
+            display: flex;
+            margin-bottom: 50px;
+        }
+    
+        .infoVideo{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 20px;
+        }
+    
+        .infoVideo h2{
+            font-weight: bold;
+        }
+    
+        .infoVideo h3{
+            opacity: 60%;
+        }
+    
+        .infoVideo p{
+            text-align: center;
+        }
+
+
+
 }
