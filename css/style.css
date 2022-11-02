@@ -6,7 +6,6 @@
     box-sizing: border-box;
 }
 
-
 #cuerpo{
     /* margin-left: 10%;
     margin-right: 10%; */
@@ -21,14 +20,14 @@ header{
     margin: 0 10%;
 }
 
-header a img{
+/* header a img{
     width: 40%;
-}
+} */
 
-nav{
+/* nav{
     width: 40%;
     display: flex;
-}
+} */
 
 nav ul{
     width: 100%;
@@ -37,13 +36,13 @@ nav ul{
     justify-content: space-between;
 }
 
-.menu-nav li{
+/* .menu-nav li{
     list-style: none;
     font-family: 'Manrope', sans-serif;
 
-}
+} */
 
-.menu-nav li a{
+.menu-nav div a{
     font-weight:500;
     font-size: 18px;
     color: white;
@@ -53,7 +52,7 @@ nav ul{
     position: relative;
 }
 
-.menu-nav li a:after{
+.menu-nav div a:after{
     content: "";
     position: absolute;
     background-color: white;
@@ -64,29 +63,41 @@ nav ul{
     transition: 0.3s;
 }
 
-.menu-nav li a:hover:after{
+.menu-nav div a:hover:after{
     width: 100%;
+}
+
+.navbar-nav{
+    width: 50%;
+    justify-content: space-around;
+    font-family: 'Manrope', sans-serif;
+}
+
+.navbar-nav a:hover{
+    color: white;
+}
+
+.navbar{
+    margin-top: 2%;
+}
+
+.navbar-brand{
+    width: 50%;
 }
 
 
 /* ESTILOS MAIN */
 
 .infoHero {
-    margin: 0 10%;
+    /* margin: 0 10%; */
     padding:80px 0;
     font-family: 'Manrope', sans-serif;
-    height: 550px;
-}
-
-.infoHero div img{
-    width: 24px;
-    height: 24px;
-    margin-bottom: 24px;
+    height: auto;
 }
 
 .infoHero h1{
     font-weight:900;
-    font-size: 60px;
+    font-size: 4rem;
     width: 85%;
     letter-spacing: -3px;
     color: white;
@@ -117,13 +128,18 @@ nav ul{
     padding-top: 24px;
     justify-content: space-between;
     align-items: center;
-    margin: 0 10%;
+    /* margin: 0 10%; */
 }
 
-footer div h6{
-    margin-bottom: 8px;
-    font-size: 14px;
-    color:darkgray;
+.footer-link{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.pie-de-inicio div h6{
+    font-size: 0.8rem;
+    color: darkgray;
     font-weight: 500;
 }
 
@@ -457,3 +473,82 @@ footer div h6{
     flex-direction: column;
 }
 
+@media screen and (max-width: 800px) {
+    header{
+        width: 100%;
+        flex-direction: column;
+        margin-left: 0%;
+        margin-right: 0%;
+        align-items: center;
+        margin-top: 5%;
+    }
+
+    header a img{
+        justify-items: center;
+        width: 50%;
+    }
+
+    header nav{
+        width: 80%;
+        margin-top: 8%;
+    }
+
+    header a{
+        display: flex;
+        justify-content: center;
+    }
+
+    .menu-nav li a{
+        font-size: 1.5rem;
+    }
+
+    .infoHero {
+        margin: 12% 10%;
+        padding:0 0;
+        height: auto;
+    }
+    
+    .infoHero h1{
+        font-size: 3rem;
+        width: 100%;
+    }
+
+    .pie-de-inicio{
+        flex-direction: column;
+        height: auto;
+        padding-top: 0px;
+        align-items: flex-start;
+        margin-top: 5%;
+    }
+
+    .pie-de-inicio li a{
+        font-size: 1rem;
+        margin-left: 0px;
+    }
+    
+    
+    .pie-de-inicio ul{
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 8px;
+    }
+
+    .pie-de-inicio div ul li{
+        padding-right: 5%;
+    }
+
+    .pie-de-inicio div h6{
+        font-size: 1.2rem;
+    }
+    
+    .marcas a img{
+        opacity: 30%;
+        width: 40%;
+    }
+
+    .marcas{
+        margin-bottom: 5%;
+    }
+
+    
+}
