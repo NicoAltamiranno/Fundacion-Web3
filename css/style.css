@@ -452,7 +452,16 @@
 
 
 
+
+
+
+
+
 /* ====================================================== */
+
+
+
+
 
 
 
@@ -820,12 +829,46 @@
     }
 
 
+
+    /* ============PRENSA================= */
+
+.card-research a{
+    text-decoration: none;
+    color: black;
+    opacity: 60%;
+    font-size: 18px;
+}
+
+.card-research a:hover{
+    opacity: 100%;
+    color: black;
+}
+
+.card-research p{
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: -1px;
+}
+
+
+
+
+
     
+
+
+
+
+
+
 
     /* ====================================================== */
 
 }
 
+
+
+/* ============================================= */
 @media screen and (max-width:992px){
     #navbarNav{
         margin-top: 3%;
@@ -957,4 +1000,42 @@
 
 #contenidoresearch a:hover{
     opacity: 100%;
+}
+
+#cuadroPrensa{
+    background-color: black;
+    padding: 4%;
+    height: auto;
+    margin-top: 60px;
+}
+
+#cuadroPrensa h3{
+    margin-bottom: 25px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#cuadroPrensa a{
+    text-decoration: none;
+    color: white;
+    opacity: 60%;
+}
+#cuadroPrensa a:hover{
+    color: white;
+    opacity: 100%;
+}
+
+#cuadroPrensa h4{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+#cuadroPrensa p{
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
 }
