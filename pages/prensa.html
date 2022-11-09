@@ -54,99 +54,127 @@
     </nav>
     <main>
         <section class=" container nosotros-primera animate__animated animate__fadeIn" >
-            <div class="row">
+            <div class="row justify-content-between position-relative">
 
-                <div class="col-sm-12 col-lg-7 sobreNosotros">
+                <div class="col-sm-12 col-lg-7 sobreNosotros" data-aos="fade-up">
                     <h2>Prensa</h2>
                 </div>
-                <div class="card col-sm-12 cl-md-12 col-lg-7 rounded-0 border-0 border-bottom">
+
+                <div class="col-sm-12 col-lg-4 position-absolute end-0" id="cuadroPrensaDos" data-aos="fade-up">
+                    <h3>Preguntas de la prensa</h3>
+                    <a href="#">press@web3.foundation</a>
+                    <h4>Bolet&iacute;n informativo</h4>
+                    <p>Siga los &uacute;ltimos comunicados de prensa y actualizaciones de Web3 Foundation</p>
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label text-light">Nombre y apellido</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label text-light">Dirección de email</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie más.
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-outline-light">Suscribirse</button>
+                    </form>                    
+                </div>
+                
+                <div class="card col-sm-12 cl-md-12 col-lg-7 rounded-0 border-0 border-bottom" data-aos="fade-up">
                     <div class="card-body card-research">
                         <h6 class="card-text mb-2 fs-6 subtitulos" >Lunes, 7 de noviembre de 2022</h6>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         <a href="#" class="card-link">Leer m&aacute;s</a>
-                    </div>
-                </div>
-                <div class="card col-sm-12 cl-md-12 col-lg-7 rounded-0 mt-5 border-0 border-bottom">
-                    <div class="card-body card-research ">
-                        <h6 class="card-text mb-2 fs-6 subtitulos" >Lunes, 7 de noviembre de 2022</h6>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="card-link">Leer m&aacute;s</a>
-                    </div>
-                </div>
-                <div class="card col-sm-12 cl-md-12 col-lg-7 rounded-0 mt-5 border-0 border-bottom">
-                    <div class="card-body card-research ">
-                        <h6 class="card-text mb-2 fs-6 subtitulos" >Lunes, 7 de noviembre de 2022</h6>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="card-link">Leer m&aacute;s</a>
-                    </div>
-                </div>
-                <div class="card col-sm-12 cl-md-12 col-lg-7 rounded-0 mt-5 border-0 border-bottom">
-                    <div class="card-body card-research ">
-                        <h6 class="card-text mb-2 fs-6 subtitulos" >Lunes, 7 de noviembre de 2022</h6>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="card-link">Leer m&aacute;s</a>
-                    </div>
-                </div>
-                <div class="card col-sm-12 cl-md-12 col-lg-7 rounded-0 mt-5 border-0 border-bottom">
-                    <div class="card-body card-research ">
-                        <h6 class="card-text mb-2 fs-6 subtitulos" >Lunes, 7 de noviembre de 2022</h6>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="card-link">Leer m&aacute;s</a>
-                    </div>
-                </div>
-                <div class="card col-sm-12 cl-md-12 col-lg-7 rounded-0 mt-5 border-0 border-bottom">
-                    <div class="card-body card-research">
-                        <h6 class="card-text mb-2 fs-6 subtitulos" >Lunes, 7 de noviembre de 2022</h6>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="card-link">Leer m&aacute;s</a>
-                    </div>
-                </div>
-                    
-            </div>
-        </section>
-        <nav aria-label="Page navigation example">
-            <ul class="pagination mt-5 px-4 ">
-                <li class="page-item ">
-                    <a class="page-link rounded-0 text-dark" href="#" aria-label="Previous">
-                    <span aria-hidden="true">&laquo;</span>
-                    </a>
-                </li>
-                <li class="page-item "><a class="page-link text-dark" href="#">1</a></li>
-                <li class="page-item"><a class="page-link text-dark" href="#">2</a></li>
-                <li class="page-item"><a class="page-link text-dark" href="#">3</a></li>
-                <li class="page-item">
-                    <a class="page-link rounded-0 text-dark" href="#" aria-label="Next">
-                    <span aria-hidden="true">&raquo;</span>
-                </a>
-                </li>
-            </ul>
-        </nav>
-        <div class="col-sm-12 col-lg-4" id="cuadroPrensa">
-            <h3>Preguntas de la prensa</h3>
-            <a href="#">press@web3.foundation</a>
-            <h4>Bolet&iacute;n informativo</h4>
-            <p>Siga los &uacute;ltimos comunicados de prensa y actualizaciones de Web3 Foundation</p>
-            <form>
-                <div class="mb-3">
-                    <label for="name" class="form-label text-light">Nombre y apellido</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                </div>
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label text-light">Dirección de email</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    <div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie más.
                     </div>
                 </div>
                 
-                <button type="submit" class="btn btn-outline-light">Suscribirse</button>
-            </form>
-            
-        </div>
+                <div class="card col-sm-12 cl-md-12 col-lg-7 rounded-0 mt-5 border-0 border-bottom" data-aos="fade-up">
+                    <div class="card-body card-research ">
+                        <h6 class="card-text mb-2 fs-6 subtitulos" >Lunes, 7 de noviembre de 2022</h6>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="card-link">Leer m&aacute;s</a>
+                    </div>
+                </div>
+                <div class="card col-sm-12 cl-md-12 col-lg-7 rounded-0 mt-5 border-0 border-bottom" data-aos="fade-up">
+                    <div class="card-body card-research ">
+                        <h6 class="card-text mb-2 fs-6 subtitulos" >Lunes, 7 de noviembre de 2022</h6>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="card-link">Leer m&aacute;s</a>
+                    </div>
+                </div>
+                <div class="card col-sm-12 cl-md-12 col-lg-7 rounded-0 mt-5 border-0 border-bottom" data-aos="fade-up">
+                    <div class="card-body card-research ">
+                        <h6 class="card-text mb-2 fs-6 subtitulos" >Lunes, 7 de noviembre de 2022</h6>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="card-link">Leer m&aacute;s</a>
+                    </div>
+                </div>
+                <div class="card col-sm-12 cl-md-12 col-lg-7 rounded-0 mt-5 border-0 border-bottom" data-aos="fade-up">
+                    <div class="card-body card-research ">
+                        <h6 class="card-text mb-2 fs-6 subtitulos" >Lunes, 7 de noviembre de 2022</h6>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="card-link">Leer m&aacute;s</a>
+                    </div>
+                </div>
+                <div class="card col-sm-12 cl-md-12 col-lg-7 rounded-0 mt-5 border-0 border-bottom" data-aos="fade-up">
+                    <div class="card-body card-research">
+                        <h6 class="card-text mb-2 fs-6 subtitulos" >Lunes, 7 de noviembre de 2022</h6>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="card-link">Leer m&aacute;s</a>
+                    </div>
+                </div>
+                
+                <nav aria-label="Page navigation example">
+                    <ul class=" pagination mt-5 px-4 ">
+                        <li class="page-item ">
+                            <a class="page-link rounded-0 text-dark" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        <li class="page-item "><a class="page-link text-dark" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link text-dark" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link text-dark" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link rounded-0 text-dark" href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="col-sm-12 col-lg-4 d-lg-none" id="cuadroPrensa">
+                    <h3>Preguntas de la prensa</h3>
+                    <a href="#">press@web3.foundation</a>
+                    <h4>Bolet&iacute;n informativo</h4>
+                    <p>Siga los &uacute;ltimos comunicados de prensa y actualizaciones de Web3 Foundation</p>
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label text-light">Nombre y apellido</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label text-light">Dirección de email</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie más.
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-outline-light">Suscribirse</button>
+                    </form>
+                
+                    
+                </div>
+                
+                    
+            </div>
+        </section>
+        
+        
 
 
 
 
-        <section class="container" id="nosotrosFinal" >
+        <section class="container my-5 py-5" >
             <div class="row" data-aos="fade-up">
                 <div class="col infoFinal">
                     <h2>Lea nuestras noticias, investigaciones, iniciativas de subvenciones y más.</h2>
