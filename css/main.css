@@ -1,0 +1,482 @@
+@charset "UTF-8";
+#pie {
+  margin-top: 50px;
+  padding-top: 50px;
+  background-image: url(../images/programacion-fondo.jpg);
+}
+
+.imagen-web img {
+  width: 50%;
+}
+
+.imagen-web {
+  padding-top: 0px;
+  padding-bottom: 50px;
+}
+
+.imagen-web img {
+  width: 50%;
+}
+
+.listaNav ul li {
+  list-style: none;
+}
+
+.listaNav ul {
+  padding: 0;
+}
+
+.listaNav li a {
+  text-decoration: none;
+  color: white;
+  opacity: 90%;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.listaNav li a:hover {
+  opacity: 100%;
+}
+
+.logos-enlaces ul {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0px;
+  margin-bottom: 50px;
+  padding-left: 0;
+}
+
+.logos-enlaces ul li {
+  list-style: none;
+}
+
+.logos-enlaces li a img {
+  width: 40px;
+}
+
+#pie-secciones {
+  display: flex;
+  width: 100%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  justify-content: space-between;
+}
+
+#pie-secciones div > ul > li {
+  list-style: none;
+  margin-left: 25px;
+  padding: 0;
+}
+
+#pie-secciones div > ul > li > a {
+  text-decoration: none;
+  color: white;
+  opacity: 60%;
+  font-size: 14px;
+}
+
+#pie-secciones ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#pie-secciones img {
+  width: 30%;
+  opacity: 60%;
+  margin-right: 25px;
+}
+
+#pie-secciones img:hover {
+  opacity: 100%;
+}
+
+#pie-secciones div > span > h6 {
+  text-align: right;
+  width: 100%;
+  font-size: 14px;
+}
+
+.derechos-reservados {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.derechos-reservados h6 {
+  font-size: 16px;
+  color: white;
+  opacity: 60%;
+}
+
+@media screen and (max-width: 576px) {
+  .imagen-web {
+    padding-top: 25px;
+    padding-bottom: 50px;
+  }
+  .imagen-web img {
+    width: 50%;
+  }
+  .listaNav ul li {
+    list-style: none;
+  }
+  .listaNav ul {
+    padding: 0;
+  }
+  .listaNav li a {
+    text-decoration: none;
+    color: white;
+    opacity: 90%;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .listaNav li a:hover {
+    opacity: 100%;
+  }
+  .logos-enlaces ul {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    padding-left: 0;
+  }
+  .logos-enlaces ul li {
+    list-style: none;
+  }
+  .logos-enlaces ul li a img {
+    width: 40px;
+  }
+  #pie-secciones {
+    display: flex;
+    width: 100%;
+    margin-top: 0px;
+    flex-direction: column;
+  }
+  #pie-secciones div > ul > li {
+    margin-left: 0;
+    margin-right: 25px;
+  }
+  #pie-secciones div > ul > li > a {
+    text-decoration: none;
+    color: white;
+    opacity: 60%;
+    font-size: 14px;
+  }
+  #pie-secciones ul {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0;
+    margin-top: 25px;
+  }
+  #pie-secciones img {
+    width: 30%;
+    opacity: 60%;
+    margin-right: 25px;
+  }
+  #pie-secciones img:hover {
+    opacity: 100%;
+  }
+  #pie-secciones div > span > h6 {
+    text-align: left;
+    width: 100%;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #navbarNav {
+    margin-top: 3%;
+    justify-content: flex-start;
+  }
+  #navbarNav li > a {
+    font-size: 20px;
+    opacity: 80%;
+  }
+  #navbarNav li > a:hover {
+    opacity: 100%;
+  }
+}
+#navbarNav {
+  margin-top: 3%;
+  justify-content: flex-start;
+}
+
+#navbarNav li > a {
+  font-size: 18px;
+  opacity: 80%;
+  margin-left: 15px;
+}
+
+#navbarNav li > a:hover {
+  opacity: 100%;
+}
+
+.sobreNosotros h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 10% 0;
+}
+
+.sobreNosotros p {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.sobreNosotros a {
+  text-decoration: none;
+  color: black;
+  opacity: 80%;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.sobreNosotros a:hover {
+  opacity: 100%;
+  color: black;
+}
+
+#cuadroInformacion {
+  padding: 4%;
+  height: auto;
+  margin-top: 25px;
+  background-color: black;
+  color: white;
+}
+#cuadroInformacion h3 {
+  color: white;
+  font-size: 20px;
+}
+#cuadroInformacion h4 {
+  margin-top: 25px;
+  font-size: 16px;
+  color: white;
+  font-weight: 300;
+}
+#cuadroInformacion ul {
+  margin-top: 25px;
+  padding-left: 0%;
+}
+#cuadroInformacion ul li {
+  list-style: none;
+  margin-bottom: 25px;
+  color: white;
+}
+
+#cuadroInformacion ul li::before { /* Añadimos contenido antes de cada elemento de la lista */
+  content: "—"; /* Insertamos el marcador */
+  padding-right: 15px; /* Establecemos el espacio entre las viñetas y el list item */
+  color: white; /* Coloreamos la viñeta */
+}
+
+.cuadroInfo h3 {
+  color: white;
+  font-size: 20px;
+}
+
+.cuadroInfo ul {
+  margin-top: 25px;
+  padding-left: 0%;
+}
+.cuadroInfo ul li {
+  list-style: none;
+  margin-bottom: 25px;
+  color: white;
+}
+
+#videoPrimero {
+  margin-top: 50px;
+}
+
+#videoContainer {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.infoVideo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 20px;
+}
+.infoVideo h2 {
+  font-weight: bold;
+}
+.infoVideo h3 {
+  opacity: 60%;
+}
+.infoVideo p {
+  text-align: left;
+  margin-top: 10px;
+}
+
+#fundadores {
+  margin-top: 50px;
+}
+
+.titulo-fundadores h2 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.personaFundadores {
+  margin-top: 0px;
+}
+.personaFundadores img {
+  width: 70%;
+  align-self: center;
+  margin-bottom: 15px;
+}
+.personaFundadores h3 {
+  font-size: 20px;
+  font-weight: 500;
+}
+.personaFundadores h4 {
+  font-size: 20px;
+  font-weight: 300;
+  opacity: 80%;
+  margin-bottom: 20px;
+}
+.personaFundadores p {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.nosotrosFinal {
+  margin-top: 50px;
+}
+
+.infoFinal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.infoFinal h2 {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  width: 60%;
+}
+.infoFinal a {
+  text-align: center;
+  margin-top: 25px;
+  text-decoration: none;
+  color: black;
+  opacity: 60%;
+}
+
+.infoFinal a:hover {
+  opacity: 100%;
+  color: black;
+}
+
+@media screen and (max-width: 576px) {
+  #videoPrimero {
+    margin-top: 50px;
+  }
+  #videoContainer {
+    display: flex;
+    margin-bottom: 50px;
+  }
+  .infoVideo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+  }
+  .infoVideo h2 {
+    font-weight: bold;
+  }
+  .infoVideo h3 {
+    opacity: 60%;
+  }
+  .infoVideo p {
+    text-align: center;
+  }
+  #fundadores {
+    margin-top: 50px;
+  }
+  .titulo-fundadores h2 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .personaFundadores {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+  .personaFundadores img {
+    width: 70%;
+    align-self: center;
+    margin-bottom: 15px;
+  }
+  .personaFundadores h3 {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .personaFundadores h4 {
+    font-size: 16px;
+    opacity: 80%;
+    margin-bottom: 20px;
+  }
+  .sobreNosotros h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 10% 0;
+  }
+  .sobreNosotros p {
+    font-size: 32px;
+    font-weight: 500;
+  }
+  .sobreNosotros a {
+    text-decoration: none;
+    color: black;
+    opacity: 80%;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .sobreNosotros a:hover {
+    opacity: 100%;
+    color: black;
+  }
+  #cuadroInformacion {
+    padding: 5%;
+    height: 288px;
+    margin-top: 20px;
+  }
+  .cuadroInfo h3 {
+    color: white;
+    font-size: 20px;
+  }
+  .cuadroInfo ul {
+    margin-top: 25px;
+    padding-left: 0%;
+  }
+  .cuadroInfo ul li {
+    list-style: none;
+    margin-bottom: 25px;
+    color: white;
+  }
+  .nosotrosFinal {
+    margin-top: 50px;
+  }
+  .infoFinal {
+    display: flex;
+    flex-direction: column;
+  }
+  .infoFinal h2 {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+  }
+  .infoFinal a {
+    text-align: center;
+    margin-top: 25px;
+    text-decoration: none;
+    color: black;
+    opacity: 60%;
+  }
+  .infoFinal a:hover {
+    opacity: 100%;
+    color: black;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,323 @@
+
+.sobreNosotros h2{
+    font-size: $xl-large;
+    font-weight: $bold;
+    margin: 10% 0;
+    
+}
+
+.sobreNosotros p{
+    font-size: $large;
+    font-weight: $regular;
+}
+
+.sobreNosotros a{
+    text-decoration: none;
+    color: $base-primario;
+    opacity: 80%;
+    font-size: $small;
+    font-weight:$regular;
+}
+
+.sobreNosotros a:hover{
+    opacity: 100%;
+    color: $base-primario;
+}
+
+
+#cuadroInformacion{
+    padding: 4%;
+    height: auto;
+    margin-top: $margin-xl;
+    background-color: $base-primario;
+    color: $base-blanco;
+
+    h3{
+        color: $base-blanco;
+        font-size: $medium-xl;
+    }
+    h4{
+        margin-top: $margin-xl;
+        font-size: $medium;
+        color: $base-blanco;
+        font-weight: $light;
+    }
+    ul{
+        margin-top: 25px;
+        padding-left: 0%;
+    
+        li{
+            list-style: none;
+            margin-bottom: 25px;
+            color: white;
+        }
+    }
+}
+
+
+
+#cuadroInformacion ul li::before { /* Añadimos contenido antes de cada elemento de la lista */
+    content: "\2014"; /* Insertamos el marcador */
+    padding-right: 15px; /* Establecemos el espacio entre las viñetas y el list item */
+    color: white; /* Coloreamos la viñeta */
+
+}
+
+.cuadroInfo h3{
+    color: $base-blanco;
+    font-size: $medium-xl;
+}
+
+.cuadroInfo ul{
+    margin-top: $margin-xl;
+    padding-left: 0%;
+
+    li{
+        list-style: none;
+        margin-bottom: $margin-xl;
+        color: $base-blanco;
+    }
+}
+
+
+
+#videoPrimero{
+    margin-top: $margin-z;
+}
+
+#videoContainer{
+    display: flex;
+    margin-bottom: $margin-z;
+}
+
+.infoVideo{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    padding-top: $margin-l;
+
+    h2{
+        font-weight: $bold;
+    }
+    h3{
+        opacity: 60%;
+    }
+    p{
+        text-align:left;
+        margin-top: $margin-s;
+    }
+    
+}
+
+
+#fundadores{
+    margin-top: $margin-z;
+}
+
+.titulo-fundadores h2{
+    font-size: $medium-xl;
+    font-weight: $bold;
+}
+
+.personaFundadores{
+    margin-top: 0px;
+
+    img{
+        width: 70%;
+        align-self: center;
+        margin-bottom: $margin-m;
+    }
+
+    h3{
+        font-size: $medium-xl;
+        font-weight: $regular;
+    }
+
+    h4{
+        font-size: $medium-xl;
+        font-weight: $light;
+        opacity: 80%;
+        margin-bottom: $margin-l;
+    }
+
+    p{
+        font-size: $medium;
+        font-weight: $light;
+    }
+}
+
+.nosotrosFinal{
+    margin-top: $margin-z;
+}
+
+.infoFinal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    h2{
+        font-size: $medium-xl;
+        font-weight: $bold;
+        text-align: center;
+        width: 60%;
+    }
+    a{
+        text-align: center;
+        margin-top: $margin-xl;
+        text-decoration: none;
+        color: $base-primario;
+        opacity: 60%;
+    }
+}
+
+.infoFinal a:hover{
+    opacity: 100%;
+    color: $base-primario;
+}
+
+
+// RESPONSIVE ============================================
+
+@media screen and (max-width:576px){
+
+    #videoPrimero{
+        margin-top: $margin-z;
+    }
+
+    #videoContainer{
+        display: flex;
+        margin-bottom: $margin-z;
+    }
+
+    .infoVideo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: $margin-l;
+
+        h2{
+            font-weight: $bold;
+        }
+
+        h3{
+            opacity: 60%;
+        }
+
+        p{
+            text-align: center;
+        }
+    }
+
+
+
+    #fundadores{
+        margin-top: $margin-z;
+    }
+
+    .titulo-fundadores h2{
+        font-size: $large;
+        font-weight: $bold;
+    }
+
+    .personaFundadores{
+        display: flex;
+        flex-direction: column;
+        margin-top: $margin-z;
+
+        img{
+            width: 70%;
+            align-self: center;
+            margin-bottom: $margin-m;
+        }
+        h3{
+            font-size: $medium;
+            font-weight: $regular;
+        }
+        h4{
+            font-size: $medium;
+            opacity: 80%;
+            margin-bottom: $margin-l;
+        }
+    }
+
+
+    .sobreNosotros h2{
+        font-size: $xl-large;
+        font-weight: bold;
+        margin: 10% 0;
+    }
+    
+    .sobreNosotros p{
+        font-size: $xl-large;
+        font-weight: $regular;
+    }
+
+    .sobreNosotros a{
+        text-decoration: none;
+        color: $base-primario;
+        opacity: 80%;
+        font-size: $small;
+        font-weight:$regular;
+    }
+
+    .sobreNosotros a:hover{
+        opacity: 100%;
+        color: $base-primario;
+    }
+    
+
+    #cuadroInformacion{
+        padding: 5%;
+        height: 288px;
+        margin-top: $margin-l;
+    }
+    
+    .cuadroInfo h3{
+        color: $base-blanco;
+        font-size: $medium-xl;
+    }
+
+    .cuadroInfo ul{
+        margin-top: $margin-xl;
+        padding-left: 0%;
+
+        li{
+            list-style: none;
+            margin-bottom: $margin-xl;
+            color: white;
+        }
+    
+    }
+
+    .nosotrosFinal{
+        margin-top: $margin-z;
+    }
+    
+    .infoFinal{
+        display: flex;
+        flex-direction: column;
+        
+        h2{
+            font-size: $medium-xl;
+            font-weight: $bold;
+            text-align: center;
+            width: 100%;
+        }
+        a{
+            text-align: center;
+            margin-top: $margin-xl;
+            text-decoration: none;
+            color: $base-primario;
+            opacity: 60%;
+        }
+    }
+    
+    .infoFinal a:hover{
+        opacity: 100%;
+        color: $base-primario;
+    }
+
+
+
+}
+

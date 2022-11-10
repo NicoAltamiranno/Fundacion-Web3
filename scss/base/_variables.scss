@@ -1,0 +1,30 @@
+// $green: green;
+
+// Es para generar variables de un mismo elemento (ej color) y luego en el componente aplicarlo directamente con el nombre clave.
+
+// header - background-color: $green;
+
+// Colores
+$base-primario: black;
+$base-secundario: darkgrey;
+$base-blanco: white;
+
+// Tamaños de fuente
+$small: 14px;
+$medium: 16px;
+$medium-xl: 20px;
+$large: 24px;
+$xl-large: 32px;
+
+// Variables de fuente
+$bold: bold;
+$regular: 500;
+$light: 300;
+
+// Espaciados
+$margin-s: 10px;
+$margin-m: 15px;
+$margin-l: 20px;
+$margin-xl: 25px;
+$margin-xxl: 30px;
+$margin-z: 50px;
