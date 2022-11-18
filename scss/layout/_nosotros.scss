@@ -175,10 +175,34 @@
     color: $base-primario;
 }
 
+#navbarNav{
+    margin-top: 0%;;
+}
+
+
+#navbarNav li>a{
+    font-family: 'Manrope';
+    font-size: 18px;
+}
 
 // RESPONSIVE ============================================
 
 @media screen and (max-width:576px){
+
+    #navbarNav{
+        margin-top: $margin-xxl;
+        justify-content: flex-start;
+    }
+
+    #navbarNav li>a{
+        font-size: $medium-xl;
+        opacity: 80%;
+
+    }
+
+    #navbarNav li>a:hover{
+        opacity: 100%;
+    }
 
     #videoPrimero{
         margin-top: $margin-z;

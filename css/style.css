@@ -1072,3 +1072,20 @@
     font-size: 18px;
     font-weight: 400;
 }
+
+.card-research a{
+    text-decoration: none;
+    color: black;
+    opacity: 60%;
+    font-size: 18px;
+}
+.card-research a:hover{
+    opacity: 100%;
+    color: black;
+}
+
+.card-research p{
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: -1px;
+}

@@ -366,7 +366,27 @@
   color: black;
 }
 
+#navbarNav {
+  margin-top: 0%;
+}
+
+#navbarNav li > a {
+  font-family: "Manrope";
+  font-size: 18px;
+}
+
 @media screen and (max-width: 576px) {
+  #navbarNav {
+    margin-top: 30px;
+    justify-content: flex-start;
+  }
+  #navbarNav li > a {
+    font-size: 20px;
+    opacity: 80%;
+  }
+  #navbarNav li > a:hover {
+    opacity: 100%;
+  }
   #videoPrimero {
     margin-top: 50px;
   }
